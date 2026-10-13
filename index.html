@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio de Esther Hernández Díaz: comunicación estratégica, cooperación internacional, salud global y contenidos multimedia.">
+<title>Esther Hernández Díaz — Comunicación & storytelling</title>
+<style>
+:root{--ink:#17221f;--muted:#5e6b65;--paper:#f6f5ef;--white:#fffefa;--green:#234f43;--lime:#d8ed8b;--line:#d9ddd3;--orange:#d36a45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-size:.9rem;font-weight:800;letter-spacing:.04em}.brand span{color:var(--orange)}nav{display:flex;gap:24px;font-size:.88rem}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--green)}
+.hero{padding:86px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800;color:var(--green)}h1{font-size:clamp(3rem,7vw,6.3rem);line-height:.98;letter-spacing:-.065em;margin:18px 0 26px;max-width:780px}h1 em{font-family:Georgia,serif;font-weight:400;color:var(--green)}.intro{font-size:1.15rem;max-width:620px;color:#46534d}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 18px;border-radius:100px;text-decoration:none;font-size:.9rem;font-weight:750;border:1px solid var(--green)}.btn.primary{background:var(--green);color:white}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-2px)}.hero-art{min-height:390px;border-radius:48% 48% 18px 18px;background:var(--green);position:relative;overflow:hidden;padding:30px;color:white;display:flex;flex-direction:column;justify-content:space-between}.hero-art:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:var(--lime);top:64px;left:50%;transform:translateX(-50%)}.hero-art:after{content:"";position:absolute;width:210px;height:290px;background:var(--orange);border-radius:48% 48% 10px 10px;bottom:-85px;left:50%;transform:translateX(-50%) rotate(18deg);opacity:.95}.art-top,.art-bottom{position:relative;z-index:1}.art-top{display:flex;justify-content:space-between;font-size:.75rem;text-transform:uppercase;letter-spacing:.12em}.art-bottom{font-family:Georgia,serif;font-size:2rem;line-height:1.05;max-width:240px}
+.strip{background:var(--lime);padding:15px 0;overflow:hidden}.strip p{margin:0;text-align:center;font-weight:750;letter-spacing:.035em;font-size:.9rem}
+section{padding:78px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0 0}.section-head p{max-width:410px;color:var(--muted);margin:0}.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.work{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-height:310px}.work-visual{height:155px;padding:20px;display:flex;align-items:end;justify-content:space-between;position:relative;overflow:hidden}.work-visual span{position:relative;z-index:1;font-size:.73rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.work-visual b{position:relative;z-index:1;font-size:2.7rem;line-height:1;letter-spacing:-.08em}.v1{background:#d8ed8b}.v2{background:#e7c9b8}.v3{background:#d7e5df}.v4{background:#e7e5d9}.v1:after,.v2:after,.v3:after,.v4:after{content:"";position:absolute;width:145px;height:145px;border:1px solid rgba(23,34,31,.25);border-radius:50%;right:38px;top:-48px;box-shadow:0 0 0 18px rgba(255,255,255,.12),0 0 0 38px rgba(255,255,255,.12)}.work-body{padding:22px;display:flex;flex:1;flex-direction:column}.work h3{margin:0 0 9px;font-size:1.35rem;letter-spacing:-.025em}.work p{color:var(--muted);margin:0 0 20px;font-size:.95rem}.work a{margin-top:auto;font-size:.88rem;font-weight:800;text-decoration:none;color:var(--green)}.work a:hover{text-decoration:underline}.note{margin-top:18px;color:var(--muted);font-size:.84rem}
+.about{background:var(--green);color:white}.about .eyebrow{color:var(--lime)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.about h2{font-size:clamp(2.2rem,4vw,3.8rem);letter-spacing:-.05em;line-height:1.05;margin:12px 0}.about-copy{font-size:1.1rem;color:#e0e9e3}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.tag{border:1px solid #6c8c7e;border-radius:99px;padding:7px 12px;font-size:.82rem}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}.job{padding:22px 0;border-top:1px solid var(--line)}.job .date{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:800}.job h3{margin:6px 0;font-size:1.15rem}.job p{margin:0;color:var(--muted);font-size:.92rem}.job .place{font-weight:700;color:var(--ink)}
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:45px}.skills-layout h3{font-size:1.2rem;margin-top:0}.skill-list{display:flex;flex-wrap:wrap;gap:9px}.skill-list span{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:.88rem}
+.contact{background:var(--lime);padding:70px 0}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{font-size:clamp(2.2rem,5vw,4.4rem);letter-spacing:-.055em;line-height:1;margin:10px 0}.contact p{max-width:500px;color:#435146}.contact .btn{border-color:var(--ink);background:var(--ink);color:white}
+footer{padding:24px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:16px}
+@media(max-width:760px){.wrap{width:min(100% - 28px,600px)}header{align-items:flex-start;gap:18px}nav{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:.8rem}.hero{grid-template-columns:1fr;padding:58px 0 50px;gap:30px}.hero-art{min-height:300px}.work-grid,.about-grid,.timeline,.skills-layout{grid-template-columns:1fr}.section-head,.contact-inner{align-items:flex-start;flex-direction:column}.section-head{gap:14px}section{padding:58px 0}.about-grid{gap:20px}.timeline{gap:0}.contact{padding:54px 0}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#inicio" aria-label="Ir al inicio">ESTHER HERNÁNDEZ DÍAZ<span>.</span></a>
+  <nav aria-label="Navegación principal"><a href="#trabajos">Trabajos</a><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div>
+    <div class="eyebrow">Comunicación · Cooperación internacional · Multimedia</div>
+    <h1>Historias que conectan <em>personas</em> e impacto.</h1>
+    <p class="intro">Soy Esther Hernández Díaz, especialista en comunicación estratégica para la cooperación internacional, la salud global y la acción humanitaria. Transformo información y experiencias en contenidos claros, visuales y relevantes para distintas audiencias.</p>
+    <div class="actions"><a class="btn primary" href="#trabajos">Explorar trabajos <span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://www.linkedin.com/in/estherhernandezdiaz" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+  </div>
+  <div class="hero-art" aria-label="Composición gráfica abstracta sobre comunicación e impacto">
+    <div class="art-top"><span>Portfolio seleccionado</span><span>2026</span></div>
+    <div class="art-bottom">Comunicar para generar cambio.</div>
+  </div>
+</section>
+</div>
+<div class="strip"><div class="wrap"><p>ESTRATEGIA · STORYTELLING · CAMPAÑAS · VÍDEO · DISEÑO · DATOS · ALIANZAS</p></div></div>
+<div class="wrap">
+<section id="trabajos">
+  <div class="section-head"><div><div class="eyebrow">Selección de áreas</div><h2>Ideas que toman forma.</h2></div><p>Una muestra de los formatos y líneas de trabajo de mi trayectoria. Consulta la carpeta de proyectos para ver los materiales originales.</p></div>
+  <div class="work-grid">
+    <article class="work"><div class="work-visual v1"><span>01 / Narrativa</span><b>↗</b></div><div class="work-body"><h3>Historias con impacto</h3><p>Storytelling, testimonios y contenidos editoriales que acercan proyectos de cooperación y salud global a diferentes públicos.</p><a href="https://drive.google.com/file/d/1oIErraBvHwTBcdBTwOeP5N6gQsqrjcaQ/view?usp=share_link" target="_blank" rel="noopener noreferrer">Ver materiales ↗</a></div></article>
+    <article class="work"><div class="work-visual v2"><span>02 / Campañas</span><b>✳</b></div><div class="work-body"><h3>Campañas y comunicación digital</h3><p>Contenidos para web, newsletters y redes sociales, campañas de sensibilización y comunicación para organizaciones sociales.</p><a href="https://lasaludunderecho.es/navarra-por-ruanda/" target="_blank" rel="noopener noreferrer">Ver materiales ↗</a></div></article>
+    <article class="work"><div class="work-visual v3"><span>03 / Multimedia</span><b>▶</b></div><div class="work-body"><h3>Vídeo, fotografía y diseño</h3><p>Creación y edición de piezas audiovisuales, recursos gráficos e infografías para explicar ideas complejas de forma accesible.</p><a href="https://drive.google.com/drive/folders/1u-W2KvatN9aSLYVIR2D9a1oUvfjwr7NP?usp=share_link" target="_blank" rel="noopener noreferrer">Ver materiales ↗</a></div></article>
+    <article class="work"><div class="work-visual v4"><span>04 / Alianzas</span><b>◎</b></div><div class="work-body"><h3>Visibilidad y movilización de recursos</h3><p>Materiales estratégicos para la relación con donantes y socios: mensajes, presentaciones y contenidos orientados a generar alianzas.</p><a href="https://lasaludunderecho.es/activismo-mundi/" target="_blank" rel="noopener noreferrer">Ver materiales ↗</a></div></article>
+  </div>
+  <p class="note">Nota: las tarjetas describen líneas de trabajo basadas en mi trayectoria; no atribuyen títulos ni resultados a proyectos concretos. Los ejemplos específicos están pendientes de seleccionar desde la carpeta compartida.</p>
+</section>
+</div>
+<section class="about" id="perfil"><div class="wrap about-grid"><div><div class="eyebrow">Mi enfoque</div><h2>Comunicación con propósito y perspectiva global.</h2></div><div class="about-copy"><p>Combino estrategia, creatividad y sensibilidad editorial para dar visibilidad a iniciativas de cooperación internacional. Mi experiencia abarca comunicación institucional, salud global, género, desarrollo y acción humanitaria, trabajando con equipos y socios en contextos multiculturales.</p><p>Me interesa convertir datos, conocimiento y experiencias sobre el terreno en mensajes útiles: contenidos que informen, movilicen y construyan confianza.</p><div class="tags"><span class="tag">Cooperación internacional</span><span class="tag">Salud global</span><span class="tag">Género</span><span class="tag">Acción humanitaria</span><span class="tag">Storytelling</span><span class="tag">Comunicación de donantes</span></div></div></div></section>
+<div class="wrap">
+<section id="experiencia">
+  <div class="section-head"><div><div class="eyebrow">Trayectoria</div><h2>Experiencia en comunicación.</h2></div><p>Experiencia en ONG, organizaciones internacionales, medios y creación de contenidos digitales.</p></div>
+  <div class="timeline">
+    <article class="job"><div class="date">Jul. 2025 — Actualidad</div><h3>Donor Engagement & Resource Mobilization Officer</h3><p class="place">ONU Mujeres · Oficina Regional para América Latina y el Caribe</p><p>Comunicación estratégica para visibilidad de donantes y alianzas; materiales de fundraising y coordinación de iniciativas de financiación.</p></article>
+    <article class="job"><div class="date">Feb. 2021 — Jul. 2025</div><h3>Responsable de Marketing y Comunicación</h3><p class="place">Medicus Mundi · Madrid</p><p>Comunicación interna y externa de proyectos de salud internacional; web, blog, medios, redes, eventos, campañas, storytelling, infografías y vídeo.</p></article>
+    <article class="job"><div class="date">Jul. 2019 — Ago. 2020</div><h3>Communication Officer</h3><p class="place">Service Civil International · Amberes</p><p>Contenidos para newsletters, web, redes, campañas y publicaciones; coordinación de celebraciones del centenario y relación con instituciones europeas.</p></article>
+    <article class="job"><div class="date">Sep. 2018 — Mar. 2019</div><h3>Strategic Communications Officer</h3><p class="place">Doctors of the World · Oficina de Centroamérica</p><p>Diseño y lanzamiento de estrategia regional de comunicación y gestión del conocimiento para visibilizar proyectos de cooperación sanitaria.</p></article>
+    <article class="job"><div class="date">May. 2018 — Ago. 2018</div><h3>Press Officer</h3><p class="place">Médicos Sin Fronteras · Madrid</p><p>Recopilación de testimonios y material visual, redacción y traducción de artículos, newsletters internas y relación con medios.</p></article>
+    <article class="job"><div class="date">Oct. 2013 — Mar. 2017</div><h3>Creadora de contenidos multimedia</h3><p class="place">Telefónica Educación Digital · Madrid</p><p>Creación de contenidos digitales para proyectos de impacto social: diseño, ilustración, vídeo y fotografía.</p></article>
+    <article class="job"><div class="date">Jul. 2011 — Sep. 2012</div><h3>Periodista</h3><p class="place">Agencia EFE · Madrid</p><p>Redacción de noticias, cobertura periodística, edición de vídeo y documentación fotográfica.</p></article>
+  </div>
+</section>
+<section id="herramientas">
+  <div class="section-head"><div><div class="eyebrow">Caja de herramientas</div><h2>De la idea a la pieza final.</h2></div></div>
+  <div class="skills-layout"><div><h3>Diseño y producción</h3><div class="skill-list"><span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>Adobe InDesign</span><span>Adobe Premiere</span><span>CapCut</span><span>Canva</span><span>WordPress</span></div></div><div><h3>Datos, campañas y gestión</h3><div class="skill-list"><span>Power BI</span><span>Google Analytics</span><span>Data Studio</span><span>Microsoft 365</span><span>Mailchimp</span><span>Brevo / Sendinblue</span><span>ActiveCampaign</span><span>CRM Sinergia</span></div><h3 style="margin-top:24px">Idiomas</h3><div class="skill-list"><span>Español · nativo</span><span>Inglés · C2</span><span>Francés · B1</span></div></div></div>
+</section>
+</div>
+<section class="contact" id="contacto"><div class="wrap contact-inner"><div><div class="eyebrow">Hablemos</div><h2>¿Creamos algo<br>con sentido?</h2><p>Para colaboraciones, proyectos de comunicación o para conocer más sobre mi trabajo, puedes escribirme o conectar conmigo en LinkedIn.</p></div><div class="actions"><a class="btn" href="mailto:estherhernandezd@gmail.com">Escríbeme ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/estherhernandezdiaz" target="_blank" rel="noopener noreferrer">Conectar en LinkedIn ↗</a></div></div></section>
+<footer class="wrap"><span>© <span id="year">2026</span> Esther Hernández Díaz</span><span>Comunicación estratégica · Contenidos multimedia · Impacto social</span></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
